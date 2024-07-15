@@ -1,0 +1,5 @@
+h1, p {font-family: serif;
+color: black;}
+h1 {border-bottom: 1px solid grey;
+color: black;}
+body {background-color: rgb(58, 40, 132);}

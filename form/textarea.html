@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textarea</title>
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <textarea name="memo" cols="50" rows="5" placeholder="메모를 입력하세요"></textarea><br>
+        학과 선택 : <select name="class">
+            <optgroup label="공과대학">
+                <option value="computer">컴퓨터</option>
+                <option value="chemical">화학공학과</option>
+                <option value="elec">전자공학학</option>
+            </optgroup>
+            <optgroup label="문과대학">
+                <option value="kor">국어국문학과</option>
+                <option value="history">사학과</option>
+            </optgroup>
+        </select>
+        <h4>좋아하는 고양이과 동물</h4>
+        <input type="text" name="cat" list="cats">
+        <datalist id="cats">
+            <option value="고양이">
+            <option value="호랑이">
+            <option value="사자">
+        </datalist>
+        <button>전송</button>
+    </form>
+    <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+        <input type="number" name="num1" value="0">
+        +<input type="number" name="num2" value="0">
+        =<output name="result" for="num"></output>
+    </form>
+</body>
+
+</html>

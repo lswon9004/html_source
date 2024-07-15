@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>레드향 주문하기</title>
+
+</head>
+
+<body>
+	<h1>레드향 주문하기</h1>
+	<div id="container">
+		<form>
+			<fieldset>
+				<legend>상품 선택</legend>
+				<h3>주문할 상품을 선택해주세요.</h3>
+				<ul>
+					<li><input type="checkbox" id="3" name="주문">
+						<label for="3">선물용 3kg</label><input type="number" max="5" min="0">개
+					</li>
+					<li><input type="checkbox" id="4" name="주문">
+						<label for="4">선물용 5kg</label><input type="number" max="3" min="0" value="1">개
+					</li>
+					<li><input type="checkbox" id="5" name="주문">
+						<label for="5">가정용 3kg</label><input type="number" max="5" min="0">개
+					</li>
+					<li><input type="checkbox" id="6" name="주문">
+						<label for="6">가정용 5kg</label><input type="number" max="3" min="0">개
+					</li>
+				</ul>
+				<h3>포장 선택</h3>
+				<ul>
+					<li><input type="radio" id="7" name="포장"><label for="7">선물 포장</label></li>
+					<li><input type="radio" id="8" name="포장"><label for="8">선물 포장 안 함</label></li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>배송 정보</legend>
+				<ul>
+					<li>이름 <input name="name"></li>
+					<li>배송 주소 <input name="address"></li>
+					<li>이메일 <input type="email" name="email"></li>
+					<li>연락처 <input type="tel" name="tel" pattern="010-[0-9]{4}-[0-9]{4}" accept="010-####-####"></li>
+					<li>배송지정 <input type="date" name="date" min="2024-05-10">(주문 일로 부터 최소 3일 이후)</li>
+					<li>메모<textarea name="memo" cols="50" rows="4"></textarea></li>
+				</ul>
+			</fieldset>
+			<input type="submit" value="주문하기">
+			<input type="reset" value="취소하기">
+		</form>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* ul li strong{color: red;}*/
+       li > strong{color: red;}
+      /*  #second + li{color: orange;}*/
+      #second ~ li{color: orange;}
+      p .test{color: blueviolet;}
+      p.test{color: darkblue;}
+    </style>
+</head>
+<body>
+    <p><span class="test"> test</span></p>
+    <p class="test">test test test</p>
+    <ul>
+        <li>text <strong>text</strong> text text text text</li>
+        <li id="second">text <span><strong>text</strong> text text</span> text text</li>
+        <li>text text text text text text</li>
+        <li>text text text text text text</li>
+    </ul>
+</body>
+</html>
